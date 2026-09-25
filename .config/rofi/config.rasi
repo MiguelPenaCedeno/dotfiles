@@ -1,0 +1,71 @@
+configuration {
+	modi: "drun,run,window";
+	show-icons: false;
+	font: "JetBrainsMono Nerd Font 11";
+	drun-display-format: "{name}";
+}
+
+* {
+	bg:      #1a1b26f2;
+	bg-alt:  #292e42;
+	fg:      #c0caf5;
+	fg-alt:  #565f89;
+	accent:  #7aa2f7;
+
+	background-color: transparent;
+	text-color:        @fg;
+}
+
+window {
+	width: 30%;
+	background-color: @bg;
+	border: 2px;
+	border-color: @accent;
+	border-radius: 0px;
+	padding: 10px;
+}
+
+mainbox {
+	children: [ inputbar, listview ];
+	spacing: 10px;
+}
+
+inputbar {
+	background-color: @bg-alt;
+	text-color: @fg;
+	border-radius: 0px;
+	padding: 8px 10px;
+	children: [ prompt, entry ];
+}
+
+prompt {
+	text-color: @accent;
+	str: "root@x230>";
+}
+
+entry {
+	placeholder: "exec://";
+	placeholder-color: @fg-alt;
+}
+
+listview {
+	lines: 8;
+	spacing: 4px;
+	scrollbar: false;
+}
+
+element {
+	padding: 6px 10px;
+	border-radius: 0px;
+}
+
+element normal.normal {
+	text-color: @fg;
+}
+
+element selected.normal {
+	background-color: @bg-alt;
+	text-color: @accent;
+	border: 0px 0px 0px 2px;
+	border-color: @accent;
+}
