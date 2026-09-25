@@ -95,3 +95,4 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Added by Antigravity CLI installer
 export PATH="/home/cybernoumena/.local/bin:$PATH"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
