@@ -5,10 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+alias ls='eza --icons'
+alias ll='eza -l --icons --git'
+alias la='eza -la --icons --git'
 alias grep='grep --color=auto'
-
-export LS_COLORS="di=1;34:ln=34:ex=1;34:*.tar=31:*.zip=31"
 
 # Reveals a multi-line block of text ($1, newline-separated) with a
 # left-to-right decode wipe: every line's not-yet-revealed characters show
