@@ -1,6 +1,7 @@
 alacritty
 base
 base-devel
+bat
 bettercap
 bind
 brightnessctl
@@ -10,6 +11,7 @@ burpsuite
 dhclient
 dhcpcd
 dunst
+eza
 fastfetch
 feh
 ffuf

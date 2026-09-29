@@ -9,6 +9,7 @@ alias ls='eza --icons'
 alias ll='eza -l --icons --git'
 alias la='eza -la --icons --git'
 alias grep='grep --color=auto'
+alias cat='bat'
 
 # Reveals a multi-line block of text ($1, newline-separated) with a
 # left-to-right decode wipe: every line's not-yet-revealed characters show
@@ -96,3 +97,4 @@ export PATH="$HOME/.local/bin:$PATH"
 # Added by Antigravity CLI installer
 export PATH="/home/cybernoumena/.local/bin:$PATH"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+export PGHOST=/tmp
